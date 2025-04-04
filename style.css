@@ -1,196 +1,741 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    --bs-body-bg: #15161B;
-    --bs-body-color: #FFFFFF;
+  --bs-body-bg: #15161b;
+  --bs-body-color: #ffffff;
 
-    font-family: "Montserrat", serif;
+  font-family: "Montserrat", serif;
 
-    --bs-nav-link-hover-color: #95e7ad;
-
+  --bs-nav-link-hover-color: #3047c5;
 }
 
 .navbar-brand {
-    font-weight: 900;
+  font-weight: 900;
+}
+
+.container {
+  padding: 20px 0px;
 }
 
 .mb-5 {
-    margin-bottom: 100px !important;
+  margin-bottom: 100px !important;
 }
 
 .mb-title {
-    margin-bottom: 25px !important;
+  margin-bottom: 25px !important;
 }
 
-
 .card {
-    --bs-card-border-color: #6FCF8A;
+  --bs-card-border-color: #4400ff;
 }
 
 .accordion {
-    --bs-border-color: #6FCF8A;
-    --bs-accordion-active-bg: #6FCF8A !important;
+  --bs-border-color: #4400ff;
+  --bs-accordion-active-bg: #4400ff !important;
 }
 
 .bg-body-tertiary {
-    background-color: inherit !important;
+  background-color: inherit !important;
 }
 
 .navbar-brand {
-    color: #6FCF8A;
+  color: #c300ff;
+
+  &:hover {
+    color: #b4bff0;
+  }
 }
 
 .navbar-nav {
-    --bs-nav-link-color: #6FCF8A !important;
+  --bs-nav-link-color: #4400ff !important;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #6FCF8A;
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #4400ff;
 }
 
 .green {
-    color: #6FCF8A;
+  color: #4400ff;
 }
 
 .accordion-button:not(.collapsed) {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn {
-    border: 1px solid #58a16f;
-    background: linear-gradient(131deg, rgba(0, 0, 0, 0.2) 0%, rgba(111, 207, 138, 0.2) 75%);
+  border: 1px solid #4400ff;
+  background: linear-gradient(131deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 47, 255, 0.2) 75%);
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: linear-gradient(131deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 47, 255, 0.2) 75%);
+    border-color: #fff;
+  }
 }
-
-
-
-
 
 h2.text-center {
-    font-weight: 700;
-    font-size: 40px;
-    text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
 }
 .textWithDecorate {
-    padding-left: 20px;
-    position: relative;
+  padding-left: 20px;
+  position: relative;
 
-    &::before {
-        position: absolute;
-        content: "";
-        height: 100%;
-        width: 5px;
-        background-color: #6FCF8A;
-        left: 0;
-    }
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #c300ff;
+    left: 0;
+  }
 }
 
 .banner {
-    height: 750px;
-    padding: 30px 0px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    background: url('./img/bg_main.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+  height: 750px;
+  padding: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+
+
+  margin-bottom: 30px;
 }
 .banner_content {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    h1 {
-        font-weight: 700;
-        font-size: 50px;
-        text-align: center;
-        color: #6fcf8a;
-    }
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #c300ff;
+  }
 
-    h2 {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 121%;
-        text-align: center;
-        color: #fff;
-    }
+  h2 {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 121%;
+    text-align: center;
+    color: #fff;
+  }
 }
 
 .history__text {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 
-    img {
-        flex: 0 0 303px;
-        height: 50px;
-    }
+  img {
+    flex: 0 0 303px;
+    height: 50px;
+  }
 }
 
+
+.cosmic-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #0a0a1a, #000033);
+  color: white;
+  padding: 3rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(1px 1px at 25px 35px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 45px 75px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 95px 45px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 135px 85px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 175px 125px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 215px 15px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 255px 65px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 295px 105px, #fff, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  animation: animStar 80s linear infinite;
+}
+
+.stars.medium {
+  background-image:
+    radial-gradient(2px 2px at 35px 95px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 75px 25px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 115px 65px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 155px 105px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 195px 45px, #fff, rgba(0, 0, 0, 0));
+  animation: animStar 120s linear infinite;
+  opacity: 0.7;
+}
+
+.stars.small {
+  background-image:
+    radial-gradient(3px 3px at 15px 55px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(3px 3px at 55px 15px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(3px 3px at 95px 75px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(3px 3px at 135px 35px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(3px 3px at 175px 95px, #fff, rgba(0, 0, 0, 0));
+  animation: animStar 160s linear infinite;
+  opacity: 0.5;
+}
+
+/* Планеты */
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.planet-1 {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at 30% 30%, #4fc3f7, #01579b);
+  top: 15%;
+  left: -50px;
+  animation: movePlanet1 25s infinite;
+}
+
+.planet-2 {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle at 30% 30%, #ff9800, #e65100);
+  top: 60%;
+  left: -80px;
+  animation: movePlanet2 40s infinite 5s;
+}
+
+.planet-3 {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle at 30% 30%, #9c27b0, #4a148c);
+  top: 30%;
+  left: -40px;
+  animation: movePlanet3 30s infinite 10s;
+}
+
+/* Комета */
+.comet {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 5px #fff);
+  top: 10%;
+  left: -10px;
+  animation: moveComet 20s infinite 7s;
+}
+
+.comet:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 30%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: rotate(-45deg);
+  transform-origin: left center;
+  left: 3px;
+  top: 2px;
+}
+
+/* Анимации */
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes movePlanet1 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(calc(100vw + 100px)) translateY(100px);
+  }
+  100% {
+    transform: translateX(0) translateY(200px);
+  }
+}
+
+@keyframes movePlanet2 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(calc(100vw + 150px)) translateY(-50px);
+  }
+  100% {
+    transform: translateX(0) translateY(-100px);
+  }
+}
+
+@keyframes movePlanet3 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(calc(100vw + 80px)) translateY(150px);
+  }
+  100% {
+    transform: translateX(0) translateY(300px);
+  }
+}
+
+@keyframes moveComet {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(calc(100vh + 100px));
+    opacity: 0;
+  }
+}
+
+/* Стили для контента */
+.cosmic-banner .navbar {
+  background-color: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+
+.cosmic-banner .navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  text-shadow: 0 0 15px #4fc3f7, 0 0 30px #4fc3f7;
+  font-size: 1.8rem;
+}
+
+.banner_content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.cosmic-banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px #4fc3f7, 0 0 20px #4fc3f7;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.cosmic-banner h2 {
+  font-size: 1.8rem;
+  text-shadow: 0 0 5px #4fc3f7, 0 0 10px #4fc3f7;
+  animation: glow 2s ease-in-out infinite alternate 0.5s;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #4fc3f7, 0 0 10px #4fc3f7;
+  }
+  to {
+    text-shadow: 0 0 15px #4fc3f7, 0 0 30px #4fc3f7, 0 0 40px #4fc3f7;
+  }
+}
+
+
 .end__text {
-    margin: 25px 0px !important;
+  margin: 25px 0px !important;
 }
 
 .end__btn {
-    width: 316px;
-    height: 48px;
+  display: block;
+  width: 316px;
+  height: 48px;
+  margin: 0 auto;
 }
-
 
 .list-link {
-    margin-top: 91px;
-    display: flex;
-    gap: 10px !important;
-
+  margin-top: 91px;
+  display: flex;
+  gap: 10px !important;
 }
 .menu__list-item {
-    width: 56px;
-    height: 56px;
+  width: 56px;
+  height: 56px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    background: linear-gradient(131deg, rgba(0, 0, 0, 0.2) 0%, rgba(111, 207, 138, 0.2) 75%);
+  background: linear-gradient(131deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 47, 255, 0.2) 75%);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  svg:not(.dec) path {
+    fill: #4400ff;
+  }
+  :has(.dec) svg path {
+    stroke: #4400ff;
+  }
 
+  &.active {
+    background-color: #4400ff;
+
+    svg path {
+      fill: #4f4f4f;
+    }
+
+    :has(.dec) svg path {
+      stroke: #4f4f4f;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #4400ff;
+
+    border: none;
 
     svg:not(.dec) path {
-        fill: #6FCF8A;
+      fill: #4f4f4f;
     }
+
     :has(.dec) svg path {
-        stroke: #6FCF8A;
+      stroke: #4f4f4f;
+    }
+  }
+}
+
+/* ////swiper */
+
+.swiper {
+  height: 600px;
+}
+
+.swiper-slide .card {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide .card img {
+  flex: 0 0 60%;
+  background-color: #95e7ad;
+}
+
+/* footer */
+
+.cosmic-footer {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to top, #0a0a1a, #000033);
+  color: white;
+  z-index: 1;
+}
+
+.cosmic-footer-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 80% 70%, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 40% 90%, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+.footer-title {
+  position: relative;
+  display: inline-block;
+  animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+.footer__text {
+  p {
+    position: relative;
+    left: 10px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+      text-shadow: 0 0 5px #4fc3f7;
     }
 
-    &.active {
-        background-color: #6FCF8A;
-
-        svg path {
-            fill: #4F4F4F;
-        }
-
-        :has(.dec) svg path {
-            stroke: #4F4F4F
-        }
+    &::before {
+      position: absolute;
+      content: " ";
+      top: 50%;
+      transform: translate(0, -50%);
+      left: -10px;
+      width: 3px;
+      height: 20px;
+      background-color: #c300ff;
+      box-shadow: 0 0 5px #c300ff, 0 0 10px #c300ff;
+      animation: pulse 1.5s infinite;
     }
+  }
+}
 
-    &:hover, &:active, &:focus {
-        background-color: #6FCF8A;
+/* Анимация спутника */
+.satellite {
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  right: -50px;
+  filter: drop-shadow(0 0 3px #4fc3f7);
+  animation: flySatellite 15s linear infinite;
 
-        border: none;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background: linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0) 100%);
+    transform: rotate(-15deg);
+    transform-origin: left center;
+    left: 5px;
+    top: 2px;
+  }
+}
 
-        svg:not(.dec) path {
-            fill: #4F4F4F;
-        }
+/* Анимации */
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
 
-        :has(.dec) svg path {
-            stroke: #4F4F4F
-        }
-    }
+@keyframes titleGlow {
+  from {
+    text-shadow: 0 0 5px #4fc3f7;
+  }
+  to {
+    text-shadow: 0 0 15px #4fc3f7, 0 0 20px #4fc3f7;
+  }
+}
 
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes flySatellite {
+  0% {
+    transform: translateX(0) translateY(-50%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(-100vw - 100px)) translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.kras {
+  width: 570px;
+  height: 270px;
+  margin-left: 50px;
+}
+
+
+/* Базовые стили */
+.green {
+  color: #4fc3f7;
+  /* Голубой вместо зелёного для космической темы */
+}
+
+/* Эффекты сияния */
+.cosmic-glow {
+  position: relative;
+  z-index: 1;
+}
+
+.cosmic-pulse {
+  display: inline-block;
+  position: relative;
+  animation: cosmicPulse 3s infinite alternate;
+  text-shadow: 0 0 10px rgba(79, 195, 247, 0.7);
+}
+
+.cosmic-pulse::before,
+.cosmic-pulse::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.cosmic-pulse::before {
+  background: radial-gradient(circle, rgba(79, 195, 247, 0.4) 0%, transparent 70%);
+  animation: cosmicRing 4s infinite ease-out;
+}
+
+.cosmic-pulse::after {
+  background: radial-gradient(circle, rgba(79, 195, 247, 0.2) 0%, transparent 70%);
+  animation: cosmicRing 4s infinite 1s ease-out;
+}
+
+/* Анимации */
+@keyframes cosmicPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(79, 195, 247, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(79, 195, 247, 0.9),
+      0 0 30px rgba(79, 195, 247, 0.5);
+  }
+}
+
+@keyframes cosmicRing {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 150%;
+    height: 300%;
+    opacity: 0;
+  }
+}
+
+/* Дополнительные эффекты при наведении */
+.cosmic-pulse:hover {
+  animation: cosmicHover 1.5s infinite alternate;
+}
+
+@keyframes cosmicHover {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 15px rgba(79, 195, 247, 0.8);
+  }
+  100% {
+    transform: scale(1.05);
+    text-shadow: 0 0 25px rgba(79, 195, 247, 1),
+      0 0 40px rgba(79, 195, 247, 0.6),
+      0 0 60px rgba(79, 195, 247, 0.3);
+  }
+}
+
+
+.cosmic-main {
+  position: relative;
+  overflow-x: hidden;
+
+  min-height: 100vh;
+
+  margin: 100px;
+}
+
+.falling-stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.falling-stars::before,
+.falling-stars::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px white;
+  animation: fallingStar linear infinite;
+}
+
+.falling-stars::before {
+  left: 20%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.falling-stars::after {
+  left: 70%;
+  animation-duration: 4s;
+}
+
+@keyframes fallingStar {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) translateX(100px);
+    opacity: 0;
+  }
 }
